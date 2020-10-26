@@ -28,7 +28,7 @@ class Kernel
         for ($i = 0; $i < self::MEASUREMENTS_FOR_EACH_ALGO; $i++) {
     //        $finds[] = $haystack[array_rand($haystack)]; // 100% happens
     //        $finds[] = -1; // never happens
-            $finds[] = random_int(1, self::MAX_INT);
+            $finds[] = random_int(1, self::MAX_INT); // happens sometimes
         }
 
         $results = array_fill_keys([
